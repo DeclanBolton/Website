@@ -1,0 +1,78 @@
+body {
+margin: 0px;
+background-color: white;
+font-family: Georgia;
+}
+
+.content {
+	width: 100%;
+	border:2px solid white;
+
+}
+
+
+
+header, footer{
+	padding: 15px;
+	color: #AAAAAA;
+	background-color: #000000;
+	clear: left;
+	text-align: center;
+
+}
+nav li a{
+	display:block;
+	color:white;
+	padding: 8px 16px;
+
+}
+nav li a:hover{
+	background-color:aqua;
+	color: white;
+}
+
+#navContainer{
+	background-color: black;
+	padding-left: 8px;
+}
+
+.point {
+	font-size:30px;
+	cursor:pointer;
+}
+
+.hideNav {
+	height:100%;
+	width:0%;
+	position: fixed;
+	z-idex:1;
+	top: 0;
+	left:0;
+	background-color: #111;
+	overflow-x:hidden;
+	transition:0.5s;
+	padding-top:60px;
+	opacity:0.9;
+}
+
+.hideNav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration:none;
+	font-size:25px;
+	color:#818181;
+	display: block;
+	transition:0.3;
+}
+.hideNav a hover {
+	color:#ff00ff;
+}
+.hideNav .btnClose {
+	position: absolute;
+	top:0;
+	right:25px;
+	font-size:36px;
+	margin-left: 0px;
+}
+@media scren and (max-height: 450px){
+	.hideNav {padding-top: 15px;}
+	.hideNav a {font-size:18px}
